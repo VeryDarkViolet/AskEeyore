@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://static.freshdev.io/fdk/2.0/assets/fresh_client.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://static.freshdev.io/fdk/2.0/assets/freshdesk.css">
+  </head>
+  <body>
+    <div class="fw-widget-wrapper">
+      <input type="hidden" id="originatorEmail"></input>
+      <p>Ticket <span id="ticketNumber"></span></p>
+      <p>Status code <span id="statusCode"></span></p>
+      <p id="apptext"></p>
+      <textarea id="messageBody" rows="5" cols="50" placeholder="Message for originator"></textarea>
+      <input type="button" onclick="sendMessageToOriginator()" value="Send Message and Mark Open"/>
+    </div>
+  </body>
+</html>

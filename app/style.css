@@ -1,0 +1,7 @@
+.logo {
+  background: url('eeyore.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 64px;
+  margin-top: 10px;
+}
